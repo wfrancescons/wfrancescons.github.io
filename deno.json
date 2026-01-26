@@ -28,7 +28,8 @@
         "esm.sh:443",
         "registry.npmjs.org:443",
         "fonts.googleapis.com:443",
-        "fonts.gstatic.com:443"
+        "fonts.gstatic.com:443",
+        "unpkg.com:443"
       ],
       "env": true,
       "run": true,
