@@ -12,6 +12,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: "https://wfrancescons.github.io"
 
     steps:
       - name: Clone repository
