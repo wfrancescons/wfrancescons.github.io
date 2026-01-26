@@ -1,0 +1,109 @@
+name: Hello, I’m Gridme!
+description: I help you build a clean, customizable, and visually engaging personal hub for all your links, content, and highlights.
+avatar: /img/avatar.jpg # Image must have a 1:1 ratio; remember to update the favicon in _config.ts
+
+layout: layout.tsx
+
+metas:
+  # Ensure SITE_URL is defined in the .env file
+  title: "$ title"
+  description: "=description"
+  image: "/img/image-og.jpg"
+  generator: Gridme + Lume
+
+components:
+  - section: Cards 💚
+
+  # Component sizes can be "square", "wide" or "large", except Sections, which do not need one
+  - image:
+    size: wide
+    # Make sure the image is in the img folder
+    src: img/1.jpg
+    alt: Alt text for your image # Optional
+    caption: I'm an image card! # Optional
+    url: https://example.com # Optional
+
+  - map:
+    size: large
+    # PRIVACY WARNING: do not use more than 3 decimal places for latitude/longitude
+    # Higher precision may reveal your exact location in the frontend !!!!!!
+    center: [-49.253, -25.434] # [lng, lat]
+    zoom: 11 # Optional
+    caption: Where I live 📍 # Optional
+
+  - note:
+    size: wide
+    content: This is a note card and you can copy the content 😉
+
+  - text:
+    size: square
+    content: Text card here! 👋
+    # Color can be: "amber" | "blue" | "green" | "red" | "purple" | "neutral"
+    color: green # Optional, default = "neutral"
+    # Text sizes can be: "small" | "medium" | "large" | "extra-large"
+    textSize: extra-large # Optional, default = "medium"
+
+  - todo:
+    size: wide
+    items:
+      - text: git add
+        completed: true
+      - text: git commit
+        completed: false # Optional, default = false
+      - text: git push
+
+  - text:
+    size: square
+    content: Another text card 🎉
+
+  - section: More cards 🥰
+
+  - text:
+    size: wide
+    content: Spark your imagination with tiny ideas ✨
+    color: purple
+    textSize: large
+
+  - note:
+    size: wide
+    content: Remember to water your plants 🌱 They thrive on consistency!
+
+  - todo:
+    size: wide
+    items:
+      - text: Write a short story
+        completed: false
+      - text: Illustrate a character
+        completed: true
+      - text: Share with a friend
+        completed: false
+
+  - image:
+    size: large
+    src: img/2.jpg
+
+  - text:
+    size: square
+    content: Coffee ☕ or tea? Decisions matter!
+    color: amber
+    textSize: medium
+
+  - note:
+    size: square
+    content: "<b>Fun fact</b>: Octopuses have 3 hearts! ❤️"
+
+  - text:
+    size: large
+    content: Dream big, start small, act now 🏃‍♂️
+    color: red
+    textSize: extra-large
+
+  - todo:
+    size: wide
+    items:
+      - text: Morning jog
+        completed: true
+      - text: Read 20 pages
+        completed: false
+      - text: Meditate
+        completed: false
