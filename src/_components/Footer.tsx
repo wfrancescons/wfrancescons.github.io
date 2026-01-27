@@ -4,21 +4,21 @@ type FooterProps = {
 
 export default function Footer({ hasMapCard }: FooterProps) {
   return (
-    <footer className="mt-auto flex flex-col items-center justify-center pt-6 text-sm text-neutral-400">
+    <footer className="mt-auto flex flex-col items-center justify-center pt-6 text-sm text-neutral-500">
       <p className="text-center">
         Made with ❤️ by{" "}
         <a
           href="https://github.com/wfrancescons/gridme"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-neutral-500 hover:underline"
+          className="font-bold hover:underline"
         >
           Gridme
         </a>
       </p>
       {hasMapCard && (
-        <p className="text-center mt-4 text-neutral-350 text-xs [&>a]:hover:underline">
-          Map rendering by:
+        <p className="text-center mt-4 text-neutral-400 text-xs [&>a]:hover:underline">
+          Map's attribution information:
           <br />
           <a
             href="https://maplibre.org/"

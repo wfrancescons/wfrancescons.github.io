@@ -5,10 +5,8 @@ type TodoProps = CardProps & {
 };
 
 export default function Todo({ items, size, comp }: TodoProps) {
-  const { Card } = comp;
-
   return (
-    <Card size={size}>
+    <comp.Card size={size}>
       <div className="w-full h-full flex flex-col overflow-hidden">
         <div className="flex flex-row justify-between bg-stone-200 p-4 items-center">
           <h3 className="font-semibold leading-tight text-stone-900">To-do</h3>
@@ -36,7 +34,7 @@ export default function Todo({ items, size, comp }: TodoProps) {
                 </div>
                 <span
                   className={`text-sm ${
-                    item.completed ? "line-through opacity-75 italic" : ""
+                    item.completed ? "line-through opacity-85 italic" : ""
                   }`}
                 >
                   {item.text}
@@ -46,6 +44,6 @@ export default function Todo({ items, size, comp }: TodoProps) {
           })}
         </div>
       </div>
-    </Card>
+    </comp.Card>
   );
 }

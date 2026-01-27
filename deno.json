@@ -4,7 +4,6 @@
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.4/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.14.9/",
-    "maplibre-gl": "npm:maplibre-gl@^5.16.0",
     "@/": "./src/"
   },
   "permissions": {
@@ -40,7 +39,7 @@
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run --env-file=.env -P=lume lume/cli.ts"
+      "command": "deno run -P=lume lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",

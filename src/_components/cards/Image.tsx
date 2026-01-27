@@ -7,22 +7,27 @@ type ImageProps = CardProps & {
   url?: string;
 };
 
+let imageIndex = 0;
+
+function getImageIndex() {
+  imageIndex++;
+  return imageIndex;
+}
+
 export default function Image(
   { size, src, alt, caption, url, comp }: ImageProps,
 ) {
-  const { Card } = comp;
-
   return (
-    <Card size={size} url={url}>
+    <comp.Card size={size} url={url}>
       <div className="w-full h-full flex flex-col overflow-hidden bg-white p-2">
         <figure className="relative overflow-hidden rounded-2xl w-full h-full">
           <img
             src={src}
             alt={alt || caption || "Image"}
             className="w-full h-full object-cover"
-            transform-images={src.startsWith("https://")
-              ? undefined
-              : "avif webp jpg 400"}
+            transform-images="avif webp jpg 600"
+            loading="lazy"
+            fetchpriority={getImageIndex() > 2 ? "low" : "high"}
           />
 
           {/* Bottom Gradient */}
@@ -51,6 +56,6 @@ export default function Image(
           </div>
         </figure>
       </div>
-    </Card>
+    </comp.Card>
   );
 }

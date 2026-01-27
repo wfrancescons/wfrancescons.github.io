@@ -1,8 +1,7 @@
 name: Hello, I’m Gridme!
 description: I help you build a clean, customizable, and visually engaging personal hub for all your links, content, and highlights.
 avatar: /img/avatar.jpg # Image must have a 1:1 ratio; remember to update the favicon in _config.ts
-
-layout: layout.tsx
+lang: en # Primary site language <html lang>
 
 metas:
   # Ensure SITE_URL is defined in the .env file
@@ -13,6 +12,7 @@ metas:
 
 components:
   - section: Cards 💚
+    subtitle: Cards size can be "square", "wide" or "large" # Optional
 
   # Component sizes can be "square", "wide" or "large", except Sections, which do not need one
   - image:
