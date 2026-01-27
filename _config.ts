@@ -49,10 +49,4 @@ site.add("img");
 site.add("style.css");
 site.add("assets", ".");
 
-// For map card
-site.remote(
-  "maplibre-gl.js",
-  "https://unpkg.com/maplibre-gl@^5.16.0/dist/maplibre-gl.js",
-);
-
 export default site;

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  body {
+    @apply font-sans;
+  }
+
+  :where(body *) :focus-visible {
+    @apply ring-0 ring-neutral-600 ring-offset-2 transition-shadow duration-150
+      ease-out;
+  }
+
+  :where(body *) :focus:not(:focus-visible) {
+    @apply ring-0 ring-offset-0;
+  }
+
+  .card:has(a:focus-visible) {
+    @apply ring-2 ring-neutral-600 ring-offset-2 transition-shadow duration-150
+      ease-out;
+  }
+
+  .card a:focus-visible {
+    @apply ring-0 ring-offset-0;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-neutral-100 border border-neutral-200 rounded-3xl overflow-hidden;
+  }
+
+  .card-square {
+    @apply col-span-1 row-span-1;
+  }
+
+  .card-wide {
+    @apply col-span-2 row-span-1;
+  }
+
+  .card-large {
+    @apply col-span-2 row-span-2;
+  }
+}
