@@ -12,8 +12,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      SITE_URL: "https://wfrancescons.github.io"
 
     steps:
       - name: Clone repository
@@ -25,7 +23,7 @@ jobs:
           cache: true
 
       - name: Build site
-        run: deno task build
+        run: deno task build --location=https://wfrancescons.github.io
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
