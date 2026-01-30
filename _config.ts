@@ -9,7 +9,6 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import picture from "lume/plugins/picture.ts";
 import robots from "lume/plugins/robots.ts";
 import seo from "lume/plugins/seo.ts";
-import sri from "lume/plugins/sri.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import terser from "lume/plugins/terser.ts";
 import transformImages from "lume/plugins/transform_images.ts";
@@ -37,7 +36,6 @@ site.use(robots());
 site.use(seo({
   options: { body: false },
 }));
-site.use(sri());
 site.use(minifyHTML({
   options: {
     minify_js: true,
