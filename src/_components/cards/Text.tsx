@@ -1,6 +1,6 @@
 import type { CardProps } from "@/_components/Card.tsx";
 
-type TextProps = CardProps & {
+export type TextProps = CardProps & {
   color?: "amber" | "blue" | "green" | "red" | "purple" | "neutral";
   textSize?: "small" | "medium" | "large" | "extra-large";
   children: JSX.Children;

@@ -12,7 +12,7 @@
 
   :where(body *) :focus-visible {
     @apply ring-0 ring-neutral-600 ring-offset-2 transition-shadow duration-150
-      ease-out;
+      ease-in-out;
   }
 
   :where(body *) :focus:not(:focus-visible) {
@@ -20,8 +20,8 @@
   }
 
   .card:has(a:focus-visible) {
-    @apply ring-2 ring-neutral-600 ring-offset-2 transition-shadow duration-150
-      ease-out;
+    @apply ring-3 ring-neutral-600 ring-offset-2 transition-shadow duration-150
+      ease-in-out;
   }
 
   .card a:focus-visible {
@@ -29,8 +29,8 @@
   }
 
   .card:has([data-folder-id]:focus-visible) {
-    @apply ring-2 ring-neutral-600 ring-offset-2 transition-shadow duration-150
-      ease-out;
+    @apply ring-3 ring-neutral-600 ring-offset-2 transition-shadow duration-150
+      ease-in-out;
   }
 
   .card [data-folder-id]:focus-visible {

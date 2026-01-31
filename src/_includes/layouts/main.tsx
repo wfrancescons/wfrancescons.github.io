@@ -70,13 +70,23 @@ export default function Layout(
   function renderGridItems(items: Component[]) {
     return items.map((item) => {
       if ("folder" in item) {
-        const folder = item;
-        const blocks = buildBlocks(folder.components);
+        const blocks = buildBlocks(item.components);
+        const itemCount = item.components.reduce(
+          (count: number, component: Component) => {
+            if ("section" in component) {
+              return count;
+            }
+            return count + 1;
+          },
+          0,
+        );
 
         return (
           <comp.cards.Folder
-            size={folder.size}
-            name={folder.name}
+            size={item.size}
+            name={item.name}
+            itemCount={itemCount}
+            color={item.color}
           >
             {renderBlocks(blocks)}
           </comp.cards.Folder>

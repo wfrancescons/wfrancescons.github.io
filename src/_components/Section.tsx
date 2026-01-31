@@ -1,4 +1,4 @@
-type SectionProps = {
+export type SectionProps = {
   title: string;
   subtitle?: string;
 };

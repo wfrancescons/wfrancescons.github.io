@@ -1,59 +1,40 @@
-import type { CardSize } from "./Card.tsx";
+import type { FolderProps } from "@/_components/cards/Folder/comp.tsx";
+import type { ImageProps } from "@/_components/cards/Image.tsx";
+import type { MapProps } from "@/_components/cards/Map/comp.tsx";
+import type { NoteProps } from "@/_components/cards/Note/comp.tsx";
+import type { TextProps } from "@/_components/cards/Text.tsx";
+import type { TodoProps } from "@/_components/cards/Todo.tsx";
+import type { SectionProps } from "@/_components/Section.tsx";
 
-type SectionComponent = {
-  section: string;
-  subtitle?: string;
-};
-
-type ImageComponent = {
-  image: null;
-  size: CardSize;
-  src: string;
-  alt: string;
-  caption?: string;
-  url?: string;
-};
-
-type MapComponent = {
-  map: null;
-  size: CardSize;
-  center: [lng: number, lat: number];
-  zoom: number;
-  caption?: string;
-};
-
-type NoteComponent = {
-  note: null;
-  size: CardSize;
-  content: string;
-};
-
-type TextComponent = {
-  text: null;
-  size: CardSize;
-  content: string;
-  color?: string;
-  textSize?: "small" | "medium" | "large";
-};
-
-type TodoComponent = {
-  todo: null;
-  size: CardSize;
-  items: { text: string; completed?: boolean }[];
-};
-
-type FolderComponent = {
+type FolderComponent = FolderProps & {
   folder: null;
-  size: CardSize;
-  name: string;
-  components: Component[];
+};
+
+type ImageComponent = ImageProps & {
+  image: null;
+};
+
+type MapComponent = MapProps & {
+  map: null;
+};
+
+type NoteComponent = NoteProps & {
+  note: null;
+};
+
+type TextComponent = TextProps & {
+  text: null;
+};
+
+type TodoComponent = TodoProps & {
+  todo: null;
 };
 
 export type Component =
   | FolderComponent
-  | SectionComponent
   | ImageComponent
   | MapComponent
   | NoteComponent
+  | SectionProps
   | TextComponent
   | TodoComponent;

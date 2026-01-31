@@ -1,6 +1,6 @@
 import type { CardProps } from "@/_components/Card.tsx";
 
-type MapProps = CardProps & {
+export type MapProps = CardProps & {
   center: [lng: number, lat: number];
   zoom?: number;
   caption?: string;

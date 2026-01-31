@@ -1,6 +1,6 @@
 import type { CardProps } from "@/_components/Card.tsx";
 
-type ImageProps = CardProps & {
+export type ImageProps = CardProps & {
   src: string;
   alt?: string;
   caption?: string;

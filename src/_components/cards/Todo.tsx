@@ -1,6 +1,6 @@
 import type { CardProps } from "@/_components/Card.tsx";
 
-type TodoProps = CardProps & {
+export type TodoProps = CardProps & {
   items: { text: string; completed?: boolean }[];
 };
 

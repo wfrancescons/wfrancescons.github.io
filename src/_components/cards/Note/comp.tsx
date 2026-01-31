@@ -1,6 +1,6 @@
 import type { CardProps } from "@/_components/Card.tsx";
 
-type NoteProps = CardProps & {
+export type NoteProps = CardProps & {
   children: JSX.Children;
 };
 
@@ -33,7 +33,7 @@ export default function Note({ children, size, comp }: NoteProps) {
                 inline
               />
             </button>
-            <span className="scale-0 select-none origin-right transition-transform duration-300 ease-in-out text-xs text-amber-950/50">
+            <span className="scale-0 select-none origin-right transition-transform duration-150 ease-in-out text-xs text-amber-950/50">
               Copied!
             </span>
           </div>

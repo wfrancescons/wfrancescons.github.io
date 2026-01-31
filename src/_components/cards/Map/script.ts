@@ -1,10 +1,12 @@
+declare const maplibregl: any;
+
 function createElement(tag: string, className: string) {
   const e = document.createElement(tag);
   e.className = className;
   return e;
 }
 
-function addFakeUserLocationHTML(map, lngLat) {
+function addFakeUserLocationHTML(map: any, lngLat: [number, number]) {
   const container = createElement(
     "div",
     "relative w-14 h-14 pointer-events-none",
@@ -29,7 +31,7 @@ function addFakeUserLocationHTML(map, lngLat) {
     rounded-full
     bg-blue-400
     ring-4 ring-white
-    shadow-[0_6px_14px_rgba(0,0,0,0.50)]
+    drop-shadow-lg/30
     z-10
   `,
   );
