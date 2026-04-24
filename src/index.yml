@@ -1,42 +1,60 @@
 name: Hi, I'm Wesley!
-description: Here you can get in touch with me and see some projects I’ve built in my free time.
+description: Here you can explore some of the projects I’ve built in my free time.
 avatar: /img/avatar.png # Image must have a 1:1 ratio
 lang: en # Primary site language <html lang>. Default = "en"
 
 components:
-  - section: Welcome 👋
+  - section: About me
+
+  - text:
+    size: wide
+    content: A programming student from Brazil 🇧🇷
+    color: amber
+    textSize: extra-large
 
   - map:
     size: large
     center: [-49.253, -25.434]
     zoom: 11
-    caption: Based in Curitiba, BR 📍
+    caption: 📍 Curitiba, Brazil
 
   - image:
     size: wide
-    src: /img/letterboxd.jpg
-    caption: Letterboxd 🎞️
-    url: https://letterboxd.com/wfrancescons/
+    src: /img/letterboxd-favs.jpg
+
+  - text:
+    size: wide
+    content: I’m into films and music, and they have influenced the projects I’ve built so far
+    color: red
+    textSize: large
 
   - image:
     size: wide
-    src: /img/lastfm.jpg
-    caption: Lastfm 🎞️
+    src: /img/lastfm-grid.jpg
+
+  - section: Connect with me
+
+  - image:
+    size: square
+    src: /img/lastfm.png
     url: https://www.last.fm/user/wfrancescons
 
-  - link:
+  - image:
     size: square
+    src: /img/letterboxd.png
+    url: https://www.letterboxd.com/wfrancescons
+
+  - image:
+    size: square
+    src: /img/bluesky.png
     url: https://bsky.app/profile/wfrancescons.bsky.social
 
-  - link:
+  - image:
     size: square
+    src: /img/github.png
     url: https://github.com/wfrancescons
 
-  - link:
-    size: wide
-    url: https://ko-fi.com/wfrancescons
-
-  - section: Projects 👨‍💻
+  - section: Projects
 
   - link:
     size: wide
@@ -44,12 +62,40 @@ components:
 
   - link:
     size: wide
-    url: https://gridme.bio/
+    url: https://github.com/wfrancescons/boxdgrid
 
   - telegram:
     size: wide
     url: https://t.me/letterboxdgrambot
 
+  - link:
+    size: wide
+    url: https://github.com/wfrancescons/letterboxdgram-bot
+
+  - link:
+    size: wide
+    url: https://gridme.bio/
+
+  - link:
+    size: wide
+    url: https://github.com/wfrancescons/gridme
+
   - telegram:
     size: wide
     url: https://t.me/telelastfmbot
+
+  - link:
+    size: wide
+    url: https://github.com/wfrancescons/telelastfm-bot
+
+  - section: Support me
+
+  - text:
+    size: wide
+    content: If my projects are useful to you, feel free to support me on Ko-fi
+    color: amber
+    textSize: medium
+
+  - link:
+    size: wide
+    url: https://ko-fi.com/wfrancescons
