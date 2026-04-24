@@ -36,13 +36,13 @@ components:
 
   - image:
     size: square
-    src: /img/lastfm.png
-    url: https://www.last.fm/user/wfrancescons
+    src: /img/letterboxd.png
+    url: https://www.letterboxd.com/wfrancescons
 
   - image:
     size: square
-    src: /img/letterboxd.png
-    url: https://www.letterboxd.com/wfrancescons
+    src: /img/lastfm.png
+    url: https://www.last.fm/user/wfrancescons
 
   - image:
     size: square
