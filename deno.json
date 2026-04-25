@@ -2,7 +2,7 @@
   "imports": {
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.0/",
-    "theme/": "https://cdn.jsdelivr.net/gh/wfrancescons/gridme@0.1.0/",
+    "theme/": "https://cdn.jsdelivr.net/gh/wfrancescons/gridme@0.1.1/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts"
   },
   "lock": false,
